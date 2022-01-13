@@ -756,6 +756,305 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_masuk/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_masuk/hari",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_masuk/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_masuk/minggu",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_masuk/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_masuk/bulan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_masuk/tahun",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_masuk/tahun",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_keluar/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_keluar/hari",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_keluar/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_keluar/minggu",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_keluar/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_keluar/bulan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_barang_keluar/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_barang_keluar/tahun",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/roleuser/1?_method=put",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "role_name",
+							"value": "dvf",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/roleuser/1?_method=put",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roleuser",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/roleuser/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/roleuser",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roleuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/roleuser/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8000/api/roleuser/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roleuser",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [

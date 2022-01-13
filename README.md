@@ -3,7 +3,7 @@ Study Case Backend
     Framework Laravel
     Login Auth menggunakan JWT
     Server Local Menggunakan Laragon jadi ketika di Running otomatis menciptakan
-     PORT tambahan jadi akan terlihat sepeti http://127.0.0.1:8000
+    PORT tambahan jadi akan terlihat sepeti http://127.0.0.1:8000
 
 API ini terdiri dari :
 
@@ -14,16 +14,32 @@ API ini terdiri dari :
     Barang (CRUD)
     Barang Masuk (CRUD)
     Barang Keluar (CRUD)
-    Laporan Stok Barang (CRUD)
-    Laporan Barang Masuk (CRUD)
-    Laporan Barang Keluar (CRUD)
+    Laporan Stok Barang - Pilih filter: hari, minggu, bulan, tahun
+    Laporan Barang Masuk - Pilih filter: hari, minggu, bulan, tahun
+    Laporan Barang Keluar - Pilih filter: hari, minggu, bulan, tahun
 
 Prosedur penggunaaan :
 
     Didalam github ini terdapat 3 buah folder, yaitu : folder project, folder database yang 
     berisikan file sql database, lalu ada folder postman_collection yang berisikan file JSON 
     postman, untuk menggunakan nya tinggal buka aplikasi POSTMAN dekstop anda lalu IMPORT file JSON 
-    didalamnya, maka akan muncul semua LINK API d dalamnya
+    didalamnya, maka akan muncul semua LINK API d dalamnya.
+
+    Dikarenakan ada relasi antara tabel user dengan role_user, maka tabel user 
+    hanya menyimpan atribut role_id: nilai integer
+    pastikan pada tabel role_user nilai 
+    - record pertama role_id=1, role_name=Admin
+    - record kedua role_id=2, role_name=Staff Gudang
+
+    Untuk Filter HANDLE disini hanya berada pada function laporan_stok_barang, 
+    laporan_barang_masuk dan laporan_barang_keluar
+    dengan membaca 
+    if(Auth::user()->role_id<>1){
+            return response()->json( [
+                'error'   => false,
+                'message' => trans( 'Hanya dapat diakses oleh Admin' )
+            ] );
+        }
 
     - localhost:8000/api/register - POST
     - localhost:8000/api/login - POST
