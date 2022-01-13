@@ -44,6 +44,12 @@ class BarangController extends Controller
         return "Data sukses terhapus";
     }
     public function laporan_stok_barang($type){
+        if(Auth::user()->role_id<>1){
+            return response()->json( [
+                'error'   => false,
+                'message' => trans( 'Hanya dapat diakses oleh Admin' )
+            ] );
+        }
         if($type=='hari'){
             $barang=Barang::select(
                 "sku", "nama_barang", "stok_barang"

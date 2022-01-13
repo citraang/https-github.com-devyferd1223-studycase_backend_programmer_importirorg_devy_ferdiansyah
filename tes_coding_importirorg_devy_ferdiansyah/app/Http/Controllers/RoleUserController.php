@@ -19,4 +19,16 @@ class RoleUserController extends Controller
         $roleuser->save();
         return "Data sukses tersimpan";
     }
+    public function update(Request $request, $id){
+        $roleuser=RoleUser::where('id', $id)->firstOrFail();
+        // die($roleuser);
+        $roleuser->role_name=$request->role_name;
+        $roleuser->update();
+        return "Data sukses terupdate";
+    }
+    public function delete($id){
+        $roleuser=RoleUser::where('id', $id)->firstOrFail();
+        $roleuser->delete();
+        return "Data sukses terhapus";
+    }
 }

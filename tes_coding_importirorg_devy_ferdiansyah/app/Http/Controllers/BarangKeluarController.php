@@ -40,6 +40,12 @@ class BarangKeluarController extends Controller
         return "Data sukses terhapus";
     }
     public function laporan_barang_keluar($type){
+        if(Auth::user()->role_id<>1 || Auth::user()->role_id<>2){
+            return response()->json( [
+                'error'   => false,
+                'message' => trans( 'Hanya dapat diakses oleh Admin dan Staff Gudang' )
+            ] );
+        }
         if($type=='hari'){
             $barangkeluar=BarangKeluar::select(
                 "sku", "tgl_keluar", "jml_barang", "petugas"

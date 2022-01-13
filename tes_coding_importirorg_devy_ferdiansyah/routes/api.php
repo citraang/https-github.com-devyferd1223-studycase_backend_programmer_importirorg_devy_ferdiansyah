@@ -23,6 +23,8 @@ Route::post('login', 'UserController@login');
 
 Route::get('roleuser', 'RoleUserController@index');
 Route::post('roleuser', 'RoleUserController@create');
+Route::put('roleuser/{id}', 'RoleUserController@update');
+Route::delete('roleuser/{id}', 'RoleUserController@delete');
 
 Route::get('kategoribarang', 'KategoriBarangController@index')->middleware('jwt.verify');
 Route::post('kategoribarang', 'KategoriBarangController@create')->middleware('jwt.verify');
