@@ -55,7 +55,7 @@ class BarangController extends Controller
                 "sku", "nama_barang", "stok_barang"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
+                ->groupBy(DB::raw("sku, DATE_FORMAT(created_at, '%Y-%m-%d')"))
                 ->get();
         }
         if($type=='minggu'){
@@ -63,7 +63,7 @@ class BarangController extends Controller
                 "sku", "nama_barang", "stok_barang"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("YEARWEEK(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("sku, YEARWEEK(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
         if($type=='bulan'){
@@ -71,7 +71,7 @@ class BarangController extends Controller
                 "sku", "nama_barang", "stok_barang"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("sku, MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
         if($type=='tahun'){
@@ -79,7 +79,7 @@ class BarangController extends Controller
                 "sku", "nama_barang", "stok_barang"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("YEAR(DATE_FORMAT(created_at, '%Y-%m-%d')), MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("sku, YEAR(DATE_FORMAT(created_at, '%Y-%m-%d')), MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
        // die($barang);

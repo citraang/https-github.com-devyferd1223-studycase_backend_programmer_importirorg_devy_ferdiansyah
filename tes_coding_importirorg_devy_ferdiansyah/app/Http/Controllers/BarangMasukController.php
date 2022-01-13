@@ -40,7 +40,7 @@ class BarangMasukController extends Controller
         return "Data sukses terhapus";
     }
     public function laporan_barang_masuk($type){
-        if(Auth::user()->role_id<>1 || Auth::user()->role_id<>2){
+        if(Auth::user()->role_id<>1 && Auth::user()->role_id<>2){
             return response()->json( [
                 'error'   => false,
                 'message' => trans( 'Hanya dapat diakses oleh Admin dan Staff Gudang' )
@@ -48,34 +48,34 @@ class BarangMasukController extends Controller
         }
         if($type=='hari'){
             $barangmasuk=BarangMasuk::select(
-                "sku", "tgl_masuk", "jml_barang", "petugas"
+                "id", "sku", "tgl_masuk", "jml_barang", "petugas"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("DATE_FORMAT(created_at, '%Y-%m-%d')"))
+                ->groupBy(DB::raw("id, sku, DATE_FORMAT(created_at, '%Y-%m-%d')"))
                 ->get();
         }
         if($type=='minggu'){
             $barangmasuk=BarangMasuk::select(
-                "sku", "tgl_masuk", "jml_barang", "petugas"
+                "id", "sku", "tgl_masuk", "jml_barang", "petugas"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("YEARWEEK(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("id, sku, YEARWEEK(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
         if($type=='bulan'){
             $barangmasuk=BarangMasuk::select(
-                "sku", "tgl_masuk", "jml_barang", "petugas"
+                "id", "sku", "tgl_masuk", "jml_barang", "petugas"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("id, sku, MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
         if($type=='tahun'){
             $barangmasuk=BarangMasuk::select(
-                "sku", "tgl_masuk", "jml_barang", "petugas"
+                "id", "sku", "tgl_masuk", "jml_barang", "petugas"
                 )
                 ->orderBy('created_at')
-                ->groupBy(DB::raw("YEAR(DATE_FORMAT(created_at, '%Y-%m-%d')), MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
+                ->groupBy(DB::raw("id, sku, YEAR(DATE_FORMAT(created_at, '%Y-%m-%d')), MONTH(DATE_FORMAT(created_at, '%Y-%m-%d'))"))
                 ->get();
         }
        // die($barang);
