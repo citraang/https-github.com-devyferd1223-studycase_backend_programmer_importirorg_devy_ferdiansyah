@@ -5,6 +5,12 @@ Study Case Backend
     Server Local Menggunakan Laragon jadi ketika di Running otomatis menciptakan
     PORT tambahan jadi akan terlihat sepeti http://127.0.0.1:8000
 
+Postman Collection
+Cara Import Postman Collection
+Buka Aplikasi postman lalu pilih menu File->import, lalu upload file JSON dibawah ini
+
+Versi Localhost - https://github.com/devyferd1223/studycase_backend_programmer_importirorg_devy_ferdiansyah/blob/main/Postman_Collection/importirorg_localhost.postman_collection_devy_ferdiansyah.json
+Varsi Online - https://github.com/devyferd1223/studycase_backend_programmer_importirorg_devy_ferdiansyah/blob/main/Postman_Collection/postman_collection_versi_online_devyferdiansyahcom.json
 API ini terdiri dari :
 
     Role User (CRUD)
