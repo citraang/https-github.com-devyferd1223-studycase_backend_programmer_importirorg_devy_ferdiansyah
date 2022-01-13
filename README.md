@@ -2,7 +2,8 @@ Study Case Backend
 
     Framework Laravel
     Login Auth menggunakan JWT
-    Server Local Menggunakan Laragon jadi ketika di Running otomatis menciptakan PORT tambahan jadi akan terlihat sepeti http://127.0.0.1:8000
+    Server Local Menggunakan Laragon jadi ketika di Running otomatis menciptakan
+     PORT tambahan jadi akan terlihat sepeti http://127.0.0.1:8000
 
 API ini terdiri dari :
 
@@ -19,7 +20,10 @@ API ini terdiri dari :
 
 Prosedur penggunaaan :
 
-    Didalam github ini terdapat 3 buah folder, yaitu : folder project, folder database yang berisikan file sql database, lalu ada folder postman_collection yang berisikan file JSON postman, untuk menggunakan nya tinggal buka aplikasi POSTMAN dekstop anda lalu IMPORT file JSON didalamnya, maka akan muncul semua LINK API d dalamnya
+    Didalam github ini terdapat 3 buah folder, yaitu : folder project, folder database yang 
+    berisikan file sql database, lalu ada folder postman_collection yang berisikan file JSON 
+    postman, untuk menggunakan nya tinggal buka aplikasi POSTMAN dekstop anda lalu IMPORT file JSON 
+    didalamnya, maka akan muncul semua LINK API d dalamnya
 
     - localhost:8000/api/register - POST
     - localhost:8000/api/login - POST
