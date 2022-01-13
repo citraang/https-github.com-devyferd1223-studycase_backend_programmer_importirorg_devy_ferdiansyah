@@ -1,0 +1,1132 @@
+{
+	"info": {
+		"_postman_id": "266a3c03-f87b-4f6a-9959-d44e788ebd56",
+		"name": "importirorg_https://importirorg.devyferdiansyah.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "devyferd1223@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/register",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "devyferd1223@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/login",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/logout",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/roleuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/roleuser",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"roleuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/kategoribarang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/kategoribarang",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategoribarang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/kategoribarang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/kategoribarang",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategoribarang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/kategoribarang/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1MzMzMSwiZXhwIjoxNjQyMDU2OTMxLCJuYmYiOjE2NDIwNTMzMzEsImp0aSI6IlA3WjFEbDF1ZlRlNDNmb2giLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NAKH30WUxTv8uWCCgmeSyZR55RZ7WD_PN__9R7iuv9c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_kategori",
+							"value": "Pakaianxxx",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/kategoribarang/1?_method=pull",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategoribarang",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "pull"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barang",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2Njc4OCwiZXhwIjoxNjQyMDcwMzg4LCJuYmYiOjE2NDIwNjY3ODgsImp0aSI6IjZnY0JEQjRRNmFiRUtseVUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.Px7LJIbrjRZGHijI-qXisLdy9Q_IslS7DlJPQccYIaM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barang",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barang",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1MzMzMSwiZXhwIjoxNjQyMDU2OTMxLCJuYmYiOjE2NDIwNTMzMzEsImp0aSI6IlA3WjFEbDF1ZlRlNDNmb2giLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NAKH30WUxTv8uWCCgmeSyZR55RZ7WD_PN__9R7iuv9c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "nama_barang",
+							"value": "Pensil",
+							"type": "default"
+						},
+						{
+							"key": "harga_barang",
+							"value": "10000",
+							"type": "default"
+						},
+						{
+							"key": "stok_barang",
+							"value": "25",
+							"type": "default"
+						},
+						{
+							"key": "id_kategori",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barang",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barang/B001",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "harga_barang",
+							"value": "125000",
+							"type": "default"
+						},
+						{
+							"key": "nama_barang",
+							"value": "Kemejea Tangan Panjang",
+							"type": "default"
+						},
+						{
+							"key": "id_kategori",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "stok_barang",
+							"value": "110",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barang/B001?_method=put",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barang",
+						"B001"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangmasuk",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangmasuk",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangmasuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangmasuk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2002-01-13\n",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "11",
+							"type": "default"
+						},
+						{
+							"key": "Petugas",
+							"value": "Staff Gudang",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangmasuk",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangmasuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangmasuk/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B001",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2022-01-13",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "21",
+							"type": "default"
+						},
+						{
+							"key": "petugas",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangmasuk/B001?_method=put",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangmasuk",
+						"B001"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangmasuk/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangmasuk/1",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangmasuk",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangkeluar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangkeluar",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangkeluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangkeluar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2002-01-13\n",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "11",
+							"type": "default"
+						},
+						{
+							"key": "Petugas",
+							"value": "Staff Gudang",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangkeluar",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangkeluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangkeluar/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2MTA4MCwiZXhwIjoxNjQyMDY0NjgwLCJuYmYiOjE2NDIwNjEwODAsImp0aSI6IkNqd01vYXM5alNiNmRaY2kiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1BOO12umQ8uCyfN3CMM0qT-swXy4J4vZHChrScr6X_M",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B001",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2022-01-13",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "21",
+							"type": "default"
+						},
+						{
+							"key": "petugas",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangkeluar/1?_method=put",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangkeluar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/barangkeluar/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2MTA4MCwiZXhwIjoxNjQyMDY0NjgwLCJuYmYiOjE2NDIwNjEwODAsImp0aSI6IkNqd01vYXM5alNiNmRaY2kiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1BOO12umQ8uCyfN3CMM0qT-swXy4J4vZHChrScr6X_M",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/barangkeluar/1",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"barangkeluar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/hari",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/minggu",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/bulan",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/tahun",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_stok_barang/tahun",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/hari",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/minggu",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/bulan",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/tahun",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_masuk/tahun",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_masuk",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/hari",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/minggu",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/bulan",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/laporan_barang_keluar/tahun",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"laporan_barang_keluar",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/roleuser/1?_method=put",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "role_name",
+							"value": "dvf",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/roleuser/1?_method=put",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"roleuser",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/roleuser/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/roleuser",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"roleuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://importirorg.devyferdiansyah.com/api/roleuser/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA3MzE4MiwiZXhwIjoxNjQyMDc2NzgyLCJuYmYiOjE2NDIwNzMxODIsImp0aSI6ImJSM21pdnBDQVhmSnVRZDgiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.dA1r2US1Hc5YCOn7-iSWZWl1h_VGx_XkjL437-3OfFI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://importirorg.devyferdiansyah.com/api/roleuser/1",
+					"protocol": "https",
+					"host": [
+						"importirorg",
+						"devyferdiansyah",
+						"com"
+					],
+					"path": [
+						"api",
+						"roleuser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "ImportirORGAuthorization",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9"
+		}
+	]
+}
