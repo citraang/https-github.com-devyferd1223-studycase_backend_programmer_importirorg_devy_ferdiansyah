@@ -1,0 +1,767 @@
+{
+	"info": {
+		"_postman_id": "bc404bd4-4142-4a91-abd0-75512016b2bc",
+		"name": "importirorg_localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "devyferd1223@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "devyferd1223@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "P@ssw0rd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/roleuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/roleuser",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roleuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/kategoribarang",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/kategoribarang",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kategoribarang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/kategoribarang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/kategoribarang",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kategoribarang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/kategoribarang/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1MzMzMSwiZXhwIjoxNjQyMDU2OTMxLCJuYmYiOjE2NDIwNTMzMzEsImp0aSI6IlA3WjFEbDF1ZlRlNDNmb2giLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NAKH30WUxTv8uWCCgmeSyZR55RZ7WD_PN__9R7iuv9c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_kategori",
+							"value": "Pakaianxxx",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/kategoribarang/1?_method=pull",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"kategoribarang",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "pull"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barang",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2Njc4OCwiZXhwIjoxNjQyMDcwMzg4LCJuYmYiOjE2NDIwNjY3ODgsImp0aSI6IjZnY0JEQjRRNmFiRUtseVUiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.Px7LJIbrjRZGHijI-qXisLdy9Q_IslS7DlJPQccYIaM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/barang",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barang",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1MzMzMSwiZXhwIjoxNjQyMDU2OTMxLCJuYmYiOjE2NDIwNTMzMzEsImp0aSI6IlA3WjFEbDF1ZlRlNDNmb2giLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.NAKH30WUxTv8uWCCgmeSyZR55RZ7WD_PN__9R7iuv9c",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "nama_barang",
+							"value": "Pensil",
+							"type": "default"
+						},
+						{
+							"key": "harga_barang",
+							"value": "10000",
+							"type": "default"
+						},
+						{
+							"key": "stok_barang",
+							"value": "25",
+							"type": "default"
+						},
+						{
+							"key": "id_kategori",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barang",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barang/B001",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "harga_barang",
+							"value": "125000",
+							"type": "default"
+						},
+						{
+							"key": "nama_barang",
+							"value": "Kemejea Tangan Panjang",
+							"type": "default"
+						},
+						{
+							"key": "id_kategori",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "stok_barang",
+							"value": "110",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barang/B001?_method=put",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barang",
+						"B001"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangmasuk",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/barangmasuk",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangmasuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangmasuk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2002-01-13\n",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "11",
+							"type": "default"
+						},
+						{
+							"key": "Petugas",
+							"value": "Staff Gudang",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barangmasuk",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangmasuk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangmasuk/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B001",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2022-01-13",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "21",
+							"type": "default"
+						},
+						{
+							"key": "petugas",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barangmasuk/B001?_method=put",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangmasuk",
+						"B001"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangmasuk/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/barangmasuk/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangmasuk",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangkeluar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/barangkeluar",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangkeluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangkeluar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA1NzI5MywiZXhwIjoxNjQyMDYwODkzLCJuYmYiOjE2NDIwNTcyOTMsImp0aSI6Im5hWjlQU3k1c3BSWnl2dmoiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.oSUbafc3Dq87AA1SKfICy6JzJDjgfzTqybxYC_w9IB4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B002",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2002-01-13\n",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "11",
+							"type": "default"
+						},
+						{
+							"key": "Petugas",
+							"value": "Staff Gudang",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barangkeluar",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangkeluar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangkeluar/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2MTA4MCwiZXhwIjoxNjQyMDY0NjgwLCJuYmYiOjE2NDIwNjEwODAsImp0aSI6IkNqd01vYXM5alNiNmRaY2kiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1BOO12umQ8uCyfN3CMM0qT-swXy4J4vZHChrScr6X_M",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "B001",
+							"type": "default"
+						},
+						{
+							"key": "tgl_masuk",
+							"value": "2022-01-13",
+							"type": "default"
+						},
+						{
+							"key": "jml_barang",
+							"value": "21",
+							"type": "default"
+						},
+						{
+							"key": "petugas",
+							"value": "Devy Ferdiansyah",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/barangkeluar/1?_method=put",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangkeluar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "put"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/barangkeluar/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2MTA4MCwiZXhwIjoxNjQyMDY0NjgwLCJuYmYiOjE2NDIwNjEwODAsImp0aSI6IkNqd01vYXM5alNiNmRaY2kiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.1BOO12umQ8uCyfN3CMM0qT-swXy4J4vZHChrScr6X_M",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/barangkeluar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"barangkeluar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_stok_barang/hari",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_stok_barang/hari",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"hari"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_stok_barang/minggu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_stok_barang/minggu",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"minggu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_stok_barang/bulan",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_stok_barang/bulan",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"bulan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/laporan_stok_barang/tahun",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0MjA2NTg1MSwiZXhwIjoxNjQyMDY5NDUxLCJuYmYiOjE2NDIwNjU4NTEsImp0aSI6IllkR0ZSNHZPSUZhTk12eTQiLCJzdWIiOjQsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.-t7c0fAz-1SD9IrIfrsYtH8LmZnnmC_O0sjKal68EA8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/laporan_stok_barang/tahun",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"laporan_stok_barang",
+						"tahun"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "ImportirORGAuthorization",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9"
+		}
+	]
+}
